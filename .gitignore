@@ -1,0 +1,6 @@
+#viljum ekki fylgjast með node_modules
+/node_modules
+#viljum ekki fylgjast með verkefna lýsingu það er niður hlaðið einusinni
+/VerkefnaLysingOGgogn
+#ætlum ekki bæta fleiri myndir þannig ætlum ekki fylgjast með möppuni
+/img
