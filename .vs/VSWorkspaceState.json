@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\synilausn",
+    "\\synilausn\\scss",
+    "\\Website"
   ],
-  "SelectedNode": "\\gogn",
+  "SelectedNode": "\\Website\\index.html",
   "PreviewInSolutionExplorer": false
 }
