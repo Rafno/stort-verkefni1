@@ -1,4 +1,5 @@
 #viljum ekki fylgjast með node_modules
-/node_modules
+/Website/node_modules
 #viljum ekki fá vs.
 /.vs
+stort-verkefni1.pdf

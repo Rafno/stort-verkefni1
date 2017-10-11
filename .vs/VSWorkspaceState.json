@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\synilausn",
     "\\synilausn\\scss",
-    "\\Website",
-    "\\Website\\scss"
+    "\\Website"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\Website\\style.scss",
   "PreviewInSolutionExplorer": false
 }
