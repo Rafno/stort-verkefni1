@@ -1,0 +1,145 @@
+// breytur fyrir mikið notaðar stærðir
+$max-width: 1200px;
+$gutter: 20px;
+
+/* setjum box-sizing: border-box; á allt */
+html { /* stylelint-disable-line */
+  box-sizing: border-box;
+}
+
+*, *:before, *:after { /* stylelint-disable-line */
+  box-sizing: inherit;
+
+  /* fjarlægjum margin og padding */
+  padding: 0;
+  margin: 0;
+}
+@mixin columns($col: 1) {
+    // margföldum með "1%" til að breyta gildi í prósentu gildi
+    width: ($col / 12 * 100) * 1%;
+}
+
+html { /* stylelint-disable-line */
+  // til þess að texti liggi ekki upp við brún á viewport þegar
+  // við erum < 1200px breiðum skjá, setjum margin á báða kanta html
+  // ruglar líka ekki í grid overlay
+  margin-right: $gutter;
+  margin-left: $gutter;
+
+  font-family: Lato, helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+
+  @media (min-width: $max-width) {
+    margin: 0;
+  }
+}
+
+img { /* stylelint-disable-line */
+  max-width: 100%;
+}
+
+main { /* stylelint-disable-line */
+  max-width: $max-width;
+  margin: 0 auto;
+
+  // þar sem við erum að eiga við neikvæð margin á grid, setjum overflow-x
+  // hér sem hidden, þá fáum við ekki lárétta skrunstiku
+  overflow-x: hidden;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+}
+
+
+header {
+    width: 100%;
+    height: 480px;
+    background: transparent url(bg.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    display: flex;
+}
+
+.text-wrap {
+    width: 100%;
+    align-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    width: 100%;
+    display: inline-block;
+    opacity: 0.5;
+    background-color: black;
+}
+
+li {
+    display: inline-block;
+    padding: 8px;
+}
+/*Copy pasteað*/
+
+
+.button {
+    display: inline-block;
+    width: 100%;
+    max-width: 156px;
+    padding: 10px 5px;
+    margin: 0;
+    overflow: hidden;
+    font-family: Lato, helvetica, arial, sans-serif;
+    font-size: 1rem;
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: #666;
+    border: 1px solid #666;
+    border-radius: 4px;
+    transition: background-color 500ms ease, color 500ms ease;
+}
+
+.button:hover {
+    color: #eee;
+    background-color: #333;
+}
+
+.button--inverted {
+    color: #666;
+    background-color: #eee;
+}
+
+.button--inverted:hover {
+    color: #333;
+    background-color: #ccc;
+}
+
+.button--disabled, .button--disabled:hover {
+    color: #999;
+    background-color: #eee;
+    border-color: #eee;
+
+    @import "scss/grid";
+    @import "scss/header";
+    @import "scss/heading";
+    @import "scss/text";
+    @import "scss/button";
+    @import "scss/card";
+    @import "scss/cardlist";
+    @import "css/styles";

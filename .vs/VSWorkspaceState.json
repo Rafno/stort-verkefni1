@@ -3,8 +3,9 @@
     "",
     "\\synilausn",
     "\\synilausn\\scss",
-    "\\Website"
+    "\\Website",
+    "\\Website\\scss"
   ],
-  "SelectedNode": "\\Website\\index.html",
+  "SelectedNode": "\\Website\\styles.css",
   "PreviewInSolutionExplorer": false
 }
