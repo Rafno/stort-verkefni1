@@ -1,0 +1,23 @@
+﻿html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after{
+    box-sizing:inherit;
+}
+body
+{
+
+}
+@mixin columns($col: 1) {
+    // margföldum með "1%" til að breyta gildi í prósentu gildi width: ($col / 12 * 100) * 1%;
+}
+header {
+    width: 100%;
+    height: 480px;
+    background: transparent url(bg.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    display: flex;
+    @include columns(12);
+}

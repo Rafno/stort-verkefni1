@@ -1,0 +1,17 @@
+{
+  "name": "stort-verkefni1",
+  "version": "1.0.0",
+  "description": "Stortverkefni",
+  "main": "index.js",
+  "scripts": {
+    "browser-sync": "browser-sync start --server --files index.html",
+    "test": "testme"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "2.18.13",
+    "stylelint": "^8.2.0",
+    "stylelint-config-primer": "2.1.0"
+  }
+}
