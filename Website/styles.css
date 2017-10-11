@@ -10,9 +10,7 @@ body
 {
 
 }
-@mixin columns($col: 1) {
-    // margföldum með "1%" til að breyta gildi í prósentu gildi width: ($col / 12 * 100) * 1%;
-}
+
 
 header {
     width: 100%;
@@ -21,7 +19,10 @@ header {
     background-size: cover;
     display: flex;
     @include columns(12);
-
+}
+.text-wrap{
+    width: 100%;
+    align-content:center;
 }
 ul{
     list-style-type:none;

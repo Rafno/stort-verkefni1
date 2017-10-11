@@ -14,6 +14,10 @@ html { /* stylelint-disable-line */
   padding: 0;
   margin: 0;
 }
+@mixin columns($col: 1) {
+    // margföldum með "1%" til að breyta gildi í prósentu gildi
+    width: ($col / 12 * 100) * 1%;
+}
 
 html { /* stylelint-disable-line */
   // til þess að texti liggi ekki upp við brún á viewport þegar
