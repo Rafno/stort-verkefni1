@@ -1,55 +1,77 @@
 ﻿<!DOCTYPE html>
 <html class="grid" lang="is" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>stort-verkefni síða</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="grid.css">
-
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
 </head>
 <body>
-    <div class="top-bar">
-        <ul>
-            <li>Fooþjónustan</li>
-            <li><a href="um.html">Um</a></li>
-            <li><button class="button kaupa">Kaupa</button></li>
-        </ul>
-    </div>
+    <nav class="navbar">
+
+        <h1 class="navbar__title">Fooþjónusta</h1>
+
+        <div class="navbar__buttons">
+            <button class="button navbar__buttons__um">Um</button>
+            <button class="button navbar__buttons__kaupa">Kaupa</button>
+        </div>
+    </nav>
     <header>
-        <div class="text-wrap">
-            <h1>Í fyrsta sinn á Íslandi</h1>
-            <h2>Fooþjónustan</h2>
-            <!-- FUCK U-->
-            <h3><button class="button">Kaupa</button></h3>
+        <div class="textFade">
+            <h1 class="textFade__h1 animation animation__h1">Í fyrsta sinn á Íslandi</h1>
+            <h2 class="textFade__h2 animation animation__h2">Fooþjónustan</h2>
+
+            <h3 class="textFade__h3 animation animation__h3"><button class="button textFade__buttons__kaupa">Kaupa</button></h3>
         </div>
     </header>
     <main>
         <div class="grid-mid">
             <div class="row">
-                <div class="col col-12">
-                    <h2 class="heading heading--two">Ódýr og góð þjónusta</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-8 col-sm-12">
+                <div class="col col-6 col-sm-12">
+                    <div class="heading heading--two">
+                        <img src="check.svg" alt="logo" />
+                        <h2 class="heading h2">Ódýr og góð þjónusta</h2>
+                    </div>
                     <div class="text">
                         <p class="text__p">Gerir nákvæmlega það sem þú býst við. Ekki láta þessa frábæru nýjung framhjá þér fara.</p>
                     </div>
-                    <h2 class="heading heading--two">Þægilegt í amstri dagsins</h2>
+                    <div class="heading heading--two">
+                        <img src="check.svg" alt="logo" />
+                        <h2 class="heading h2">Þægilegt í amstri dagsins</h2>
+                    </div>
                     <div class="text">
                         <p class="text__p">Eftir nokkra daga munt þú aldrei geta verið án Fooþjónustunnar.</p>
                     </div>
-                    <h2 class="heading heading--three">Nauðsynlegt á hvert heimili</h2>
+                    <div class="heading heading--two">
+                        <img src="check.svg" alt="logo" />
+                        <h2 class="heading h2">Nauðsynlegt á hvert heimili</h2>
+                    </div>
                     <div class="text">
                         <p class="text__p">Hvort sem er fyrir einstaklinga eða stórfjölskyldur.</p>
                     </div>
                 </div>
-                <div class="col col-4 col-sm-12">
+                <div class="col col-6 col-sm-12">
                     <img alt="" src="image.jpg">
                 </div>
             </div>
         </div>
+
+
+        <div class="col col-12 col-sm-12">
+            <div class="row row__profile">
+                <div class="col col-4 col-som-8">
+                    <img src="profile1.jpg" alt="profile" />
+                </div>
+                <div class="col col-4 col-som-8">
+                    <img src="profile2.jpg" alt="profile" />
+                </div>
+                <div class="col col-4 col-som-8">
+                    <img src="profile3.jpg" alt="profile" />
+                </div>
+            </div>
+        </div>
+
     </main>
 </body>
 

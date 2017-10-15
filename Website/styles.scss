@@ -17,7 +17,7 @@ html {
     /* stylelint-disable-line */
     margin-right: 20px;
     margin-left: 20px;
-    font-family: Lato, helvetica, arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -42,15 +42,17 @@ main {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
-    margin-right: -10px;
-    margin-bottom: 20px;
-    margin-left: -10px;
+    flex-wrap: wrap; 
+}
+.BE__profile{
+    display:flex;
+    width: 100%;
 }
 
 .col {
     padding-right: 10px;
     padding-left: 10px;
+    font-size: 1em;
 }
 
 .col-12 {
@@ -98,13 +100,12 @@ main {
 }
 
 header {
-    height: 520px;
+    height: 100vh;
     display: flex;
     margin: 0 auto 20px;
     align-items: center;
     background: transparent url(bg.jpg) no-repeat;
     background-size: cover;
-    align-items: center;
     justify-content: center;
 }
 
@@ -127,15 +128,19 @@ header {
 }
 
 .heading--two {
+    margin-top: 1em;
     font-size: 2rem;
-}
-
-.heading--three {
-    font-size: 1rem;
+    float:right;
+    img{
+        width: 1.3em;
+        float:left;
+    }
 }
 
 .text__p {
-    margin-bottom: 20px;
+    margin-bottom: 80px;
+    margin-left: 40px;
+
 }
 
 .button {
@@ -185,6 +190,9 @@ header {
 }
 
 
+
 @import "scss/navigator";
 @import "scss/button";
-@import "scss/grid";    
+@import "scss/grid";
+@import "scss/textFade";
+@import "scss/animations";

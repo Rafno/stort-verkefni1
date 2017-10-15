@@ -1,0 +1,37 @@
+//Byrjum on endir á öllum hlutum i.e byrja ósynilegt og verður sýnilegt
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.animation {
+ opacity:0; 
+ -webkit-animation:fadeIn ease-in 1;
+ -moz-animation:fadeIn ease-in 1;
+ animation:fadeIn ease-in 1;
+ 
+ -webkit-animation-fill-mode:forwards;  
+ -moz-animation-fill-mode:forwards;
+ animation-fill-mode:forwards;
+ 
+ -webkit-animation-duration:1s;
+ -moz-animation-duration:1s;
+ animation-duration:1s;
+ 
+  &__h1 {
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+  }
+ 
+  &__h2 {
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay:1.5s;
+    animation-delay: 1.5s;
+  }
+ 
+  &__h3 {
+    -webkit-animation-delay: 2.3s;
+    -moz-animation-delay: 2.3s;
+    animation-delay: 2.3s;
+  }
+}

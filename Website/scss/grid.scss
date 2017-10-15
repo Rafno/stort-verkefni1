@@ -35,6 +35,9 @@
     &-3 {
         @include columns(3);
     }
+    &-1{
+        @include columns(1);
+    }
 
     &-sm {
         @media (max-width: 599px) {

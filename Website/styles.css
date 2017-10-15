@@ -15,7 +15,7 @@ html {
   /* stylelint-disable-line */
   margin-right: 20px;
   margin-left: 20px;
-  font-family: Lato, helvetica, arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5; }
 
@@ -35,14 +35,16 @@ main {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
-  margin-right: -10px;
-  margin-bottom: 20px;
-  margin-left: -10px; }
+  flex-wrap: wrap; }
+
+.BE__profile {
+  display: flex;
+  width: 100%; }
 
 .col {
   padding-right: 10px;
-  padding-left: 10px; }
+  padding-left: 10px;
+  font-size: 1em; }
 
 .col-12 {
   width: 100%; }
@@ -75,13 +77,12 @@ main {
     margin-left: 0; } }
 
 header {
-  height: 520px;
+  height: 100vh;
   display: flex;
   margin: 0 auto 20px;
   align-items: center;
   background: transparent url(bg.jpg) no-repeat;
   background-size: cover;
-  align-items: center;
   justify-content: center; }
 
 .heading {
@@ -99,13 +100,16 @@ header {
   font-size: 3rem; }
 
 .heading--two {
-  font-size: 2rem; }
-
-.heading--three {
-  font-size: 1rem; }
+  margin-top: 1em;
+  font-size: 2rem;
+  float: right; }
+  .heading--two img {
+    width: 1.3em;
+    float: left; }
 
 .text__p {
-  margin-bottom: 20px; }
+  margin-bottom: 80px;
+  margin-left: 40px; }
 
 .button {
   display: inline-block;
@@ -147,28 +151,47 @@ header {
 .grid-mid {
   margin-top: 40px; }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; }
+.navbar {
+  display: flex;
+  background-color: #333;
+  justify-content: space-between;
+  color: #FFFFFF;
+  position: sticky;
+  top: 0;
+  opacity: 0.9;
+  z-index: 1; }
+  .navbar__title {
+    padding: 5px;
+    font-size: 1.5em;
+    font-family: 'Roboto Slab', serif; }
+  .navbar__buttons {
+    padding: 6px;
+    display: flex; }
+    .navbar__buttons .navbar__buttons__kaupa {
+      width: 4em;
+      font-size: 1em;
+      overflow: initial; }
+    .navbar__buttons .navbar__buttons__um {
+      padding-right: 15px;
+      background-color: #333;
+      border: 1px solid #333; }
 
-li {
-  float: left; }
-
-.top-bar {
-  display: block;
-  padding: 8px;
-  background-color: lightpink; }
-
+/*
+    <div class="top-bar">
+        <div class="top-h1">
+            <h1>Fooþjónusta</h1>
+        </div>
+        <div class="top-buttons"><button class="button kaupa">Kaupa</button>
+            <a href="um.html" class="button">Um</a>
+        </div>
+    </div>
+    */
 .button {
   display: inline-block;
   width: 100%;
   max-width: 256px;
   padding: 10px 5px;
   margin: 0;
-  overflow: hidden;
-  font-family: Lato, helvetica, arial, sans-serif;
   font-size: 1rem;
   color: #eee;
   text-align: center;
@@ -214,6 +237,8 @@ li {
     width: 33.33333%; }
   .col-3 {
     width: 25%; }
+  .col-1 {
+    width: 8.33333%; }
   @media (max-width: 599px) {
     .col-sm-12 {
       width: 100%; }
@@ -234,3 +259,57 @@ li {
 @media (max-width: 599px) {
   .offset-sm-0 {
     margin-left: 0; } }
+
+.textFade {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .textFade__h1 {
+    font-size: 1.5em; }
+  .textFade__h2 {
+    font-size: 3.125em; }
+  .textFade__h3 {
+    margin-top: 2em;
+    width: 4em; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.animation {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s; }
+  .animation__h1 {
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s; }
+  .animation__h2 {
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    animation-delay: 1.5s; }
+  .animation__h3 {
+    -webkit-animation-delay: 2.3s;
+    -moz-animation-delay: 2.3s;
+    animation-delay: 2.3s; }
