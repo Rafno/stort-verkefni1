@@ -1,0 +1,21 @@
+﻿.profiles {
+    display: flex;
+
+
+    &__img {
+        border-radius: 50%;
+    }
+
+    &__section {
+        flex-direction: column;
+
+        &__text {
+            margin: 10px;
+            text-align: center;
+        }
+
+        &__subtext {
+            //TODO FINNA RÉTT BIL
+        }
+    }
+}

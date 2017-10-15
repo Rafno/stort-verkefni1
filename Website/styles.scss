@@ -42,12 +42,13 @@ main {
 
 .row {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+
+    &__profile {
+        border-radius: 50%;
+    }
 }
-.BE__profile{
-    display:flex;
-    width: 100%;
-}
+
 
 .col {
     padding-right: 10px;
@@ -196,3 +197,4 @@ header {
 @import "scss/grid";
 @import "scss/textFade";
 @import "scss/animations";
+@import "scss/profiles";

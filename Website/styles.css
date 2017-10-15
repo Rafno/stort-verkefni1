@@ -36,10 +36,8 @@ main {
 .row {
   display: flex;
   flex-wrap: wrap; }
-
-.BE__profile {
-  display: flex;
-  width: 100%; }
+  .row__profile {
+    border-radius: 50%; }
 
 .col {
   padding-right: 10px;
@@ -313,3 +311,13 @@ header {
     -webkit-animation-delay: 2.3s;
     -moz-animation-delay: 2.3s;
     animation-delay: 2.3s; }
+
+.profiles {
+  display: flex; }
+  .profiles__img {
+    border-radius: 50%; }
+  .profiles__section {
+    flex-direction: column; }
+    .profiles__section__text {
+      margin: 10px;
+      text-align: center; }
