@@ -9,13 +9,18 @@
     &__section {
         flex-direction: column;
 
+        &__subTime {
+            font-size: 0.8em;
+            color: #7a8186;
+        }
+
         &__text {
             margin: 10px;
             text-align: center;
         }
 
-        &__subtext {
-            //TODO FINNA RÉTT BIL
+        h1 {
+            font-size: 1.3em;
         }
     }
 }

@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\synilausn\\scss",
-    "\\Website"
+    "\\Website",
+    "\\Website\\scss"
   ],
-  "SelectedNode": "\\Website\\style.scss",
+  "SelectedNode": "\\Website\\index.html",
   "PreviewInSolutionExplorer": false
 }
