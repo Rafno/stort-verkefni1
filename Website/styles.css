@@ -33,6 +33,14 @@ main {
   margin: 0 auto;
   overflow-x: hidden; }
 
+.fyrra {
+  display: flex;
+  flex-wrap: wrap; }
+
+.personu {
+  display: flex;
+  flex-wrap: wrap; }
+
 .row {
   display: flex;
   flex-wrap: wrap; }
