@@ -32,53 +32,11 @@ main {
 
 .fyrra {
   display: flex;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
 .personu {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: 2em;
-}
-
-.greidslu {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: 2em;
-}
-
-.eftir {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: 0em 2em 2em 2em;
-}
-
-.field {
-  display: flex;
-  flex-direction: column;
-  margin:1em;
-}
-
-.lol {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 2em;
-}
-
-.gender {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  margin: 1em;
-}
-
-.gender label {
-  padding: 0.25em;
-}
+  flex-wrap: wrap; }
 
 .row {
   display: flex;
