@@ -108,7 +108,7 @@ main {
     padding: 6px;
     display: flex; }
     .navbar__buttons .navbar__buttons__kaupa {
-      width: 50%;
+      width: 4em;
       font-size: 1em;
       overflow: initial; }
     .navbar__buttons .navbar__buttons__um {
