@@ -292,24 +292,10 @@ main {
   color: #FFFFFF;
   font-size: 1em;
   border-bottom: 2px solid #999;
+  padding-bottom: 3em;
+  text-align: center;
+  padding-top: 1em;
   padding-bottom: 3em; }
-  .UpperFooter__Left {
-    display: flex;
-    float: right;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-    padding-left: 13em;
-    margin-top: auto;
-    margin-bottom: auto; }
-  .UpperFooter__Right {
-    padding-right: 13em;
-    width: 50%;
-    display: flex;
-    float: left;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px; }
 
 .LowerFooter {
   display: flex;
