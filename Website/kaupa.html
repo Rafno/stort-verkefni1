@@ -1,29 +1,93 @@
-﻿<!DOCTYPE html>
-<html class="grid"lang="is" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html class="grid" lang="is" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>stort-verkefni síða</title>
-    <!--<link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="grid.css">-->
-    
-    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
 </head>
 <body>
-    <div class="top-bar">
-        <ul>
-            <li>Fooþjónustan</li>
-            <li><a href="um.html">Um</a></li>
-            <li><button class="button kaupa">Kaupa</button></li>
-        </ul>
-    </div>
-    <header>
-        <div class="text-wrap">
-            <h1>Í fyrsta sinn á Íslandi</h1>
-            <h2>Fooþjónustan</h2>
-            <button class="button">Kaupa</button>
+    <nav class="navbar">
+
+        <h1 class="navbar__title">Fooþjónusta</h1>
+
+        <div class="navbar__buttons">
+            <button class="button navbar__buttons__um">Um</button>
+            <button class="button navbar__buttons__kaupa">Kaupa</button>
+        </div>
+    </nav>
+
+
+    <header class="aboutheader">
+        <div class="aboutheader__text">
+            <h1>Kaupa</h1>
         </div>
     </header>
 
+    <main>
+      <div class="allt">
+        <div class="personu">
+        <h1>Persónuupplýsingar</h2>
+          <label for="nafn">Nafn:</label>
+          <input autofocus type="nafn" name="nafn" id="nafn" required>
+          <label for="kennitala">Kennitala:</label>
+          <input type="kennitala" name="kennitala" id="kennitala">
+          <label>Kyn:
+          <input name="gender" type="radio" value="woman">
+          Kona
+          </label>
+          <label>
+          <input name="gender" type="radio" value="man">
+          Karl
+          </label>
+          <label>
+          <input name="gender" type="radio" value="other">
+          Annað
+          </label>
+          <label for="phone">Sími:</label>
+          <input name="phone" id="phone" required>
+          <label for="address">Heimilisfang:</label>
+          <input name="address" id="address" required>
+          <label>
+          <input name="post" type="checkbox" value="yes" checked>
+          Skrá mig á póstlista
+          </label>
+        </div>
+        <div class="greidslu">
+          <h2>Greiðsluupplýsingar</h2>
+            <label>
+              <select>
+                <option value="credit">Kreditkorti</option>
+                <option value="debit">Debitkorti</option>
+            </label>
+            <label for="cardname">Nafn á korti:</label>
+            <input name="cardname" id="cardname" required>
+            <label for="cardnumber">Kortanúmer:</label>
+            <input name="cardnumber" id="cardnumber" required>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <div class="UpperFooter">
+
+            <div class="UpperFooter__Left">
+                <p>Fooþjónusta</p>
+                <p>123-567</p>
+            </div>
+
+            <div class="UpperFooter__Right">
+
+                <p>Opið 12 - 13 alla daga</p>
+                <p>Bargata 9</p>
+                <p>900 Foobar</p>
+
+            </div>
+        </div>
+        <div class="LowerFooter">
+            <p>	&copy; Fooþjónustan 2017</p>
+        </div>
+    </footer>
 </body>
-    
+
 </html>
