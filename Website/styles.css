@@ -2,7 +2,12 @@
 /* setjum box-sizing: border-box; á allt */
 html {
   /* stylelint-disable-line */
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5; }
 
 *, *:before, *:after {
   /* stylelint-disable-line */
@@ -10,14 +15,6 @@ html {
   /* fjarlægjum margin og padding */
   padding: 0;
   margin: 0; }
-
-html {
-  /* stylelint-disable-line */
-  margin-right: 20px;
-  margin-left: 20px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.5; }
 
 @media (min-width: 1200px) {
   html {
@@ -129,103 +126,17 @@ main {
   .offset-sm-0 {
     margin-left: 0; } }
 
-.end_button {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-
-.end_button button {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 2em;
-  width: 6em; }
-
-header {
-  height: 100vh;
-  display: flex;
-  margin: 0 auto 20px;
-  align-items: center;
-  background: transparent url(bg.jpg) no-repeat;
-  background-size: cover;
-  justify-content: center; }
-
-.aboutheader {
-  width: 100%;
-  height: 400px;
-  background: transparent url(bg-subpage.jpg) no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: flex-start; }
-  .aboutheader__text {
-    padding-left: 2.250em;
-    color: #FFFFFF;
-    font-family: 'Roboto Slab', serif; }
-
-.heading {
-  width: 100%;
-  font-size: 2rem;
-  border: 0; }
-
-@media (min-width: 1200px) {
-  .heading {
-    padding-right: 0;
-    padding-left: 0; } }
-
-.heading--one {
-  font-size: 3rem; }
-
-.heading--two {
-  margin-top: 1em;
-  font-size: 2em;
-  float: right; }
-  .heading--two img {
-    width: 1.3em;
-    float: left; }
-
 .text__p {
   margin-bottom: 80px;
   margin-left: 40px; }
 
-.button {
-  display: inline-block;
-  width: 100%;
-  max-width: 256px;
-  padding: 10px 5px;
-  margin: 0;
-  overflow: hidden;
-  font-family: Lato, helvetica, arial, sans-serif;
-  font-size: 1rem;
-  color: #eee;
-  text-align: center;
-  text-decoration: none;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-  background-color: #666;
-  border: 1px solid #666;
-  border-radius: 4px;
-  transition: background-color 500ms ease, color 500ms ease; }
+.quote {
+  padding: 2em;
+  font-size: 1.5em; }
 
-.button:hover {
-  color: #eee;
-  background-color: #333; }
-
-.button--inverted {
-  color: #666;
-  background-color: #eee; }
-
-.button--inverted:hover {
-  color: #333;
-  background-color: #ccc; }
-
-.button--disabled, .button--disabled:hover {
-  color: #999;
-  background-color: #eee;
-  border-color: #eee; }
+.quote p {
+  margin-left: 13px;
+  font-size: 18px; }
 
 .grid-mid {
   margin-top: 40px; }
@@ -295,6 +206,21 @@ header {
     color: #999;
     background-color: #eee;
     border-color: #eee; }
+
+.end_button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.end_button button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 2em;
+  width: 6em; }
 
 .row {
   display: flex;
@@ -443,3 +369,45 @@ header {
   justify-content: center;
   padding-top: 1em;
   padding-bottom: 1em; }
+
+header {
+  height: 100vh;
+  display: flex;
+  margin: 0 auto 20px;
+  align-items: center;
+  background: transparent url(bg.jpg) no-repeat;
+  background-size: cover;
+  justify-content: center; }
+
+.aboutheader {
+  width: 100%;
+  height: 400px;
+  background: transparent url(bg-subpage.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start; }
+  .aboutheader__text {
+    padding-left: 2.250em;
+    color: #FFFFFF;
+    font-family: 'Roboto Slab', serif; }
+
+.heading {
+  width: 100%;
+  font-size: 2rem;
+  border: 0; }
+
+@media (min-width: 1200px) {
+  .heading {
+    padding-right: 0;
+    padding-left: 0; } }
+
+.heading--one {
+  font-size: 3rem; }
+
+.heading--two {
+  margin-top: 1em;
+  font-size: 2em;
+  float: right; }
+  .heading--two img {
+    width: 1.3em;
+    float: left; }
