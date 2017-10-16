@@ -108,7 +108,7 @@ main {
     padding: 6px;
     display: flex; }
     .navbar__buttons .navbar__buttons__kaupa {
-      width: 4em;
+      width: 50%;
       font-size: 1em;
       overflow: initial; }
     .navbar__buttons .navbar__buttons__um {
@@ -225,7 +225,8 @@ main {
     font-size: 3.125em; }
   .textFade__h3 {
     margin-top: 2em;
-    width: 4em; }
+    width: 50%;
+    font-size: 1.5em; }
 
 @-webkit-keyframes fadeIn {
   from {
