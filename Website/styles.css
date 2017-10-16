@@ -359,8 +359,8 @@ main {
   flex-direction: column;
   margin: 1em; }
 
-.gender {
-  padding: 0.25em; }
+.gender .label {
+  padding: 0.33em; }
 
 header {
   height: 100vh;
