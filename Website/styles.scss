@@ -36,16 +36,6 @@ main {
     overflow-x: hidden;
 }
 
-.fyrra {
-  display:flex;
-  flex-wrap: wrap;
-}
-
-.personu {
-  display:flex;
-  flex-wrap: wrap;
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -145,7 +135,5 @@ main {
 @import "scss/animations";
 @import "scss/profiles";
 @import "scss/upperfooter";
-<<<<<<< HEAD
-=======
+@import "scss/kaupa"
 @import "scss/headers";
->>>>>>> ac591ee8c6cd605a1365751fee9dfc125b6374d0
