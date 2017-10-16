@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="grid" lang="is" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
@@ -26,47 +26,49 @@
     </header>
 
     <main>
-      <div class="allt">
-        <div class="personu">
-        <h1>Persónuupplýsingar</h2>
-          <label for="nafn">Nafn:</label>
-          <input autofocus type="nafn" name="nafn" id="nafn" required>
-          <label for="kennitala">Kennitala:</label>
-          <input type="kennitala" name="kennitala" id="kennitala">
-          <label>Kyn:
-          <input name="gender" type="radio" value="woman">
-          Kona
-          </label>
-          <label>
-          <input name="gender" type="radio" value="man">
-          Karl
-          </label>
-          <label>
-          <input name="gender" type="radio" value="other">
-          Annað
-          </label>
-          <label for="phone">Sími:</label>
-          <input name="phone" id="phone" required>
-          <label for="address">Heimilisfang:</label>
-          <input name="address" id="address" required>
-          <label>
-          <input name="post" type="checkbox" value="yes" checked>
-          Skrá mig á póstlista
-          </label>
+        <div class="allt">
+            <div class="personu">
+                <h1>
+                    Persónuupplýsingar</h2>
+                    <label for="nafn">Nafn:</label>
+                    <input autofocus type="nafn" name="nafn" id="nafn" required>
+                    <label for="kennitala">Kennitala:</label>
+                    <input type="kennitala" name="kennitala" id="kennitala">
+                    <label>
+                        Kyn:
+                        <input name="gender" type="radio" value="woman">
+                        Kona
+                    </label>
+                    <label>
+                        <input name="gender" type="radio" value="man">
+                        Karl
+                    </label>
+                    <label>
+                        <input name="gender" type="radio" value="other">
+                        Annað
+                    </label>
+                    <label for="phone">Sími:</label>
+                    <input name="phone" id="phone" required>
+                    <label for="address">Heimilisfang:</label>
+                    <input name="address" id="address" required>
+                    <label>
+                        <input name="post" type="checkbox" value="yes" checked>
+                        Skrá mig á póstlista
+                    </label>
+            </div>
+            <div class="greidslu">
+                <h2>Greiðsluupplýsingar</h2>
+                <label>
+                    <select>
+                        <option value="credit">Kreditkorti</option>
+                        <option value="debit">Debitkorti</option>
+                </label>
+                <label for="cardname">Nafn á korti:</label>
+                <input name="cardname" id="cardname" required>
+                <label for="cardnumber">Kortanúmer:</label>
+                <input name="cardnumber" id="cardnumber" required>
+            </div>
         </div>
-        <div class="greidslu">
-          <h2>Greiðsluupplýsingar</h2>
-            <label>
-              <select>
-                <option value="credit">Kreditkorti</option>
-                <option value="debit">Debitkorti</option>
-            </label>
-            <label for="cardname">Nafn á korti:</label>
-            <input name="cardname" id="cardname" required>
-            <label for="cardnumber">Kortanúmer:</label>
-            <input name="cardnumber" id="cardnumber" required>
-        </div>
-      </div>
     </main>
     <footer>
         <div class="UpperFooter">
