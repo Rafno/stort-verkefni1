@@ -39,7 +39,7 @@ main {
   .row__profile {
     border-radius: 50%; }
 
-.midrow .floater {
+.midrow {
   display: flex;
   flex-direction: row;
   float: right; }
