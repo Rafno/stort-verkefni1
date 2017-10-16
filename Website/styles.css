@@ -80,6 +80,14 @@ main {
   margin-bottom: 80px;
   margin-left: 40px; }
 
+.quote {
+  padding: 2em;
+  font-size: 1.5em; }
+
+.quote p {
+  margin-left: 13px;
+  font-size: 18px; }
+
 .grid-mid {
   margin-top: 40px; }
 
