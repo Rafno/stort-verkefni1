@@ -48,10 +48,11 @@ main {
         border-radius: 50%;
     }
 }
-.midrow .floater{
-    display:flex;
+.midrow {
+    display: flex;
     flex-direction: row;
-    float:right;
+    float: right;
+    
 }
 .col {
     padding-right: 10px;
